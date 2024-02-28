@@ -23,6 +23,10 @@ export class EmployeeListComponent {
     })
   }
 
+  employeeDetails(id: number) {
+    this.router.navigate(['employee-details', id]);
+  }
+
   updateEmployee(id: number) {
     this.router.navigate(['update-employee', id]);
   }
